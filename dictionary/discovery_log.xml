@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="no_audit_delete=true" extends="syslog" label="Discovery Log" max_length="40" name="discovery_log" sizeclass="0" type="collection">
+        <element default="global" label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
+    </element>
+</database>
